@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html>
+<head>
+    <input id="first" placeholder="enter a">
+    <input id="second" placeholder="enter b">
+    <input id="third" placeholder="enter c">
+        <button onclick="fact()">length</button>
+       
+</head>
+<body>  
+    <script>
+        function fact()
+        {
+            var a,b,c;
+            a=Number(document.getElementById("first").value); 
+            b=Number(document.getElementById("second").value); 
+            c=Number(document.getElementById("third").value);
+        
+            if(a+b==c)
+            {
+              document.write("# value can be replaced with +");
+            }
+            else if(a*b==c)
+            {
+                document.write("# value can be replaced with *");
+            }
+            else if(a-b==c)
+            {
+                document.write("# value can be replaced with -");
+            }
+            else if(a/b==c)
+            {
+                document.write("# value can be replaced with /");
+            }
+
+       }
+
+        </script>
+        </body>
+        </html>

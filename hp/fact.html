@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+        <input id="first">
+        <button onclick="fact()">length</button>
+       
+</head>
+<body> 
+    <script>
+        function fact()
+        {var n,fact=1;
+            n=Number(document.getElementById("first").value);
+            for(i=1;i<=n;i++)
+            {
+            var fact=fact*i;
+            }
+            document.getElementById("answer").value= fact;
+           
+     }
+    </script>
+     <input id="answer">   
+      
+</body>
+</html>

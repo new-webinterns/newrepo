@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <input id="first" placeholder="enter year">
+        <button onclick="fact()">length</button>
+       
+</head>
+<body> 
+    <script>
+        function fact()
+        {
+            var n;
+            var a,a1,a2;
+            n=Number(document.getElementById("first").value);
+            document.write(" "+n);
+            document.write("</br>")
+            a=n%100;
+            a1=(n-a)/100;
+            if(a%100==0){
+                document.write("century is "+a1);
+              
+            }
+            else{
+
+            a2=a1+1;
+            document.write("century is "+a2+" ");
+                }
+
+     }
+
+        </script>
+        </body>
+        </html>

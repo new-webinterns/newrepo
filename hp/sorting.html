@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+      
+        <button onclick="sort()">add</button>
+       
+</head>
+<body> 
+    <script>
+      function sort()
+      {
+       
+       var n=parseInt(prompt("enter array size"));
+       var a=new Array(n);
+       var f=1;
+       for(var i=0;i<a.length;i++)
+       {
+           a[i]=parseInt(prompt("enter elements of array"));
+           var k=parseInt(prompt("Enter the key element"));
+           for(i=0;i<a.length;i++){
+               if(k==a[i])
+               {
+                   f=i;
+                   break;
+               
+               }
+           }
+           if(f==1){
+               document.write("element "+a[i]+" is found");
+           }
+           else
+           {
+               document.write("not found");
+           }
+       }
+      } 
+    </script>
+        
+     
+
+</body>
+</html>
