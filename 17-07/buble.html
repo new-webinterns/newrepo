@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<script> 
+var a=[-1,5,3,2,1,-6,-5,-8,6,10];
+function bubble_Sort(arr){
+var len = arr.length,i, j, s;
+for (i=0; i < len; i++){
+s=len-i;
+for (j=0; j < s; j++){
+if (arr[j] > arr[j+1]){
+var temp = arr[j];
+arr[j] = arr[j+1];
+arr[j+1] = temp;
+}
+}
+}
+return arr;
+}
+console.log(bubble_Sort(a));
+</script>
+</body>
+</html>
+

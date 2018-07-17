@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var da=[-1,5,3,2,1,-6,-5,-8,6,10];
+function Selsort(arr, comfuc) {
+function compare(a, b) {
+return a - b;
+} 
+var min = 0,index = 0,temp=0;
+comfuc = comfuc || compare;
+for (var i = 0; i < arr.length; i=i+1) {
+index = i;
+min = arr[i];
+for (var j = i+1; j < arr.length; j=j+1) {
+if (comfuc(min, arr[j]) > 0) {
+min = arr[j];
+index = j;
+}
+}
+temp = arr[i];
+arr[i] = min;
+arr[index] = temp;
+}
+return arr;
+}
+console.log(Selsort(da)); 
+</script>
+</body>
+</html>
