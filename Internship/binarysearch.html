@@ -1,0 +1,41 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Binary search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    
+
+    <script>
+    var array=[2,3,4,5,6];
+    var low=0;
+    var high=array.length;
+    var ele=4;
+   bin(array,low,high,ele);
+
+    function bin(array,low,high,ele)
+    {
+        var mid=Math.floor((low+high)/2);
+    while(low<=high)
+    {
+   
+        if(ele==array[mid]){
+        document.write("Element is found in position ",mid);
+        return 0;
+        }
+        else if(ele<array[mid])
+       high=mid-1;
+        else if(ele>array[mid])
+        low=mid+1;
+    }
+    
+  
+    }
+    </script>
+</body>
+</html>

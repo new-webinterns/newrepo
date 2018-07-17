@@ -1,0 +1,32 @@
+<html>
+    <head>
+            
+              
+    </head>
+    <body>
+        <script>
+            disp();
+                    function disp()
+                    {
+                        var s =["aba","aa","ad","vcd","aba"];
+                        var len=0;
+                        var strg=[];
+                        for(i=0;i<s.length;i++)
+                        { 
+
+                            if(s[i].length>=len)
+                            {
+                                len=s[i].length;
+                                strg[i]=s[i];
+                                
+                            }
+                         } 
+                         for(i=0;i<strg.length;i++)
+                        { 
+                                document.writeln(strg[i]);
+                        }  
+       
+                    }
+        </script>
+    </body>
+</html>

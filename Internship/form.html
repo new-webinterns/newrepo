@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+table{
+width: 50%;
+border-collapse: collapse;
+
+}
+td{
+    padding: 10px;
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+    ul li {
+        -ms-flex: 50%;
+        flex: 50%;
+        width: 100%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    ul li {
+        -ms-flex: 100%;
+        flex: 100%;
+    	width: 100%;
+    }
+}
+
+
+</style>
+<title>Form</title>
+
+</head>    
+<body>
+<form action="enter.jsp" method="POST">
+    <table id="t">
+        <tr>
+<td><p>First Name:</p>
+<input  type="text" name="fname" placeholder="Enter First Name"></td>
+<td><p>Last Name:</p>
+<input  type="text" name="lname" placeholder="Enter Last Name"></td></tr>
+<tr><td><p>Place:</p>
+<input  type="text" name="Place" placeholder="Enter the Place"></td>
+<td><p>Email:</p>
+<input  type="email" name="em" placeholder="Enter the Email"></td></tr>
+<tr><td><p>Address:</p>
+<input  type="text" name="ad" placeholder="Enter the Address"></td>
+<td><p>Username:</p>
+<input  type="text" name="uname" placeholder="Enter the Username"></td></tr>
+<tr><td><p>Password:</p>
+<input  type="password" name="pwd" placeholder="Enter the Password"></td>
+<td><p>Gender:</p>
+Male<input type="radio" checked="checked" >
+Female<input type="radio"></td></tr>
+<tr><td><p>College:</p><select name="=College">
+<option value="SDM">SDM</option>
+<option value="NITTE">NITTE</option>
+<option value="SIT">SIT</option>
+</select></td>
+<td><p>University:</p>
+<input  type="checkbox" name="type" value="vtu">VTU
+<input  type="checkbox" name="type" value="auton">Autonomous</td></tr>
+
+<tr>
+<td><input  type="submit"  value="Submit"></td>
+<td><input  type="reset" value="Reset"></td>
+</tr>
+</table>
+</form>
+
+<script>
+    var year=2000;
+    var con=Math.floor((year/100)+1);
+    document.write("Century is",con);
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-size:cover;
+	font-family: Arial;
+	color:  white;
+	
+}
+ul
+{
+	width: 100%;	
+	padding: 0;
+	list-style:none;
+}
+ul li
+{
+	float: left;;
+	width: 25%;
+	height: 10%;
+	background-color: black;
+	opacity: 0.7;
+	line-height: 90px;
+	text-align: center;
+	font-size: 50px;
+}
+ul li a
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+ul li a:hover
+{
+	background-color: green;
+	
+}
+
+ul li ul li
+{	width: 100%;
+	display:none;
+}
+ul li:hover ul li
+{
+	display:block;
+}
+table{
+
+border:1px solid black;
+border-collapse: collapse;
+}
+table#t1 tr:nth-child(even)
+{
+
+	background-color: rgb(47, 0, 255);
+}
+	table#t1 tr:nth-child(odd)
+	{
+	background-color:green;
+	}
+
+tr.a23 td{
+
+background-color: darkmagenta;
+
+}
+@media screen and (max-width: 800px) {
+    ul li {
+        -ms-flex: 50%;
+        flex: 50%;
+        width: 100%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    ul li {
+        -ms-flex: 100%;
+        flex: 100%;
+    	width: 100%;
+    }
+}

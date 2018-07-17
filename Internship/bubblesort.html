@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+<script>
+    var array=[8,7,6,4];
+    selection(array);
+
+    insertion(aray);
+    function insertion()
+        {
+            
+
+
+
+        }
+    
+
+    function selection(array)
+    {
+            var i,j,mini;
+            for(i=0;i<array.length-1;i++)
+            {
+                    mini=i;
+                    for(j=i+1;j<array.length;j++)
+                    {
+                        if(array[j]<array[mini])
+                        mini=j;
+                        var temp=array[mini];
+                        array[mini]=array[i];
+                        array[i]=temp;
+                    }
+
+            }
+            for(i=0;i<array.length;i++)
+            {
+                    document.write(array[i]);
+            }
+
+
+    }
+    function bubble(){
+    for(i=0;i<array.length-1;i++)
+    for(j=0;j<array.length-i-1;j++)
+    {
+        if(array[j]>array[j+1])
+        {
+var temp=array[j+1];
+array[j+1]=array[j];
+array[j]=temp;
+
+        }
+    }
+    for(i=0;i<array.length;i++)
+    {
+        document.write(array[i]);
+    }
+    }
+</script>
+</body>
+</html>

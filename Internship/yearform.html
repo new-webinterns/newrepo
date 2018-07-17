@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Form</title>
+
+</head>    
+<body>
+<form>
+<p>Year:</p>
+<input  type="text"  id="year" placeholder="Enter the year">
+<button onclick="myMethod()">Submit</button>  
+</form>
+
+<script>
+    function myMethod()
+    {
+        var year=document.getElementById("year").value   ;
+        if(year%100==0){
+
+            var con=Math.floor((year/100));
+        }else {
+        var con=Math.floor((year/100)+1);
+    }
+    document.write("Century is",con);
+    }
+    
+</script>
+</body>
+</html>
