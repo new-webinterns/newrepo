@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>hi
+</title>
+</head>
+<body>
+<script>
+var r,sp,p,no=7,n;
+n=no;
+var a=2;
+var value=1;
+for(r=1;r<=no;r++)
+{
+if(r<=4){
+  for(sp=1;sp<=n;sp++)
+  {
+    document.write("&nbsp&nbsp&nbsp");
+	
+	}
+	n--;
+	for(p=1;p<=r;p++)
+	{
+	  document.write(value);
+	      document.write("&nbsp&nbsp&nbsp");
+
+	  value++;
+	  }
+	  document.write("<br>");
+	   document.write("<br>");
+	}
+	else
+	{n++;
+	for(sp=1;sp<=n;sp++)
+  {
+    document.write("&nbsp&nbsp&nbsp");
+	
+	}
+	
+	for(p=1;p<=r-a;p++)
+	{
+	  document.write(value);
+	      document.write("&nbsp&nbsp&nbsp");
+	  value++;
+	  }
+	  a=a+2;
+	  document.write("<br>");
+	   document.write("<br>");
+	}
+	
+	  }
+	  </script>
+	  </body>
+	  </html>
+	
