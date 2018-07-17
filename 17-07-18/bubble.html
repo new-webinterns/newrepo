@@ -1,0 +1,27 @@
+<html>
+<body>
+<script>
+
+var a=[-1,5,3,2,1,-6,-5,-8,6,10];
+var n=a.length;
+do{
+var sort=false;
+for(i=0;i<n;i++)
+{
+if(a[i]>a[i+1])
+{
+var temp=a[i];
+a[i]=a[i+1];
+a[i+1]=temp;
+sort=true;
+}
+}
+n--;
+}
+while(sort);
+
+
+document.write(a);
+</script>
+</body>
+</html>

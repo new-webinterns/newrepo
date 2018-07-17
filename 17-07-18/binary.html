@@ -1,0 +1,58 @@
+<html>
+<body>
+<script>
+
+var a=[-8,-6,-5,-1,1,2,3,5,6,10];
+var n=a.length;
+var element=0;
+var low=0,high=n-1;
+bin(low,high,element);
+var mid=(low+high)/2;
+
+if(element==a[mid])
+{
+document.write("given element is at position "+mid);
+
+}
+else if(element<a[mid])
+{
+bin(low,mid,element)
+
+}
+else if(element>a[mid])
+{
+bin(mid+1,high,element)
+}
+
+function bin(low,high,element)
+{
+for(i=low;i<high;i++)
+{
+if(a[i]==element)
+{
+  var flag=1;
+  break;
+
+}
+
+}
+ if(flag==1) 
+{
+document.write("given element is at position "+i);
+}
+else
+{
+document.write("not found");
+}
+}
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
