@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+
+    overflow: hidden;
+    background-color: rgb(194, 182, 182);
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: rgb(83, 185, 97);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(84, 101, 177);
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="grid1.html">dog</a></li>
+  <li><a href="grid2.html">cat</a></li>
+  <li><a href="grid3.html">naik</a></li>
+  <li><a href="grid4.html">nithin</a></li>
+  <li><a href="grid4.html">naik</a></li>
+</ul>
+<h1>loading</h1>
+</body>
+</html>

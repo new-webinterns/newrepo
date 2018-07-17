@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>   
+    <input id="first">
+   <button onclick="fact()">fact</button>
+</head>
+<body>
+<script>
+    function fact()
+    {    var c=1;
+        var a;
+        a=Number(document.getElementById("first").value);
+        if(a==0)
+        {
+            document.write(c)
+        }
+        else {
+            b=a*fact(a-1);
+            document.write(b)
+        }
+    }
+    </script>
+    </body>
+    </html>

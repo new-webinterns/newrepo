@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <input id="first" placeholder="enter numbet of year">
+        <button onclick="fact()">enter</button>
+       
+</head>
+<body> 
+    <script>
+        function fact()
+        { var senc;
+            var year;
+            year=Number(document.getElementById("first").value);
+            senc=year%100;
+            a=year-senc;
+            a2=a/100;
+            if(year%100==0)
+            {
+                document.write(a2);
+            }
+            else
+            a3=(a2+1);
+
+            document.write("</br>");
+            document.write("senc :   ");
+            document.write(a3);
+        }
+
+            </script>
+            </body></html>
+
