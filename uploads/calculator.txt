@@ -1,0 +1,44 @@
+<html>
+<head><title>hi</title>
+</head>
+<body>
+<h1>Simple Calculator</h1>
+<form name="calculator">
+<table>
+<tr>
+<input type="text" id="t1">
+</tr>
+<tr>
+<td><input type="button" value="1"Onclick="document.getElementById('t1').value+='1'"/></td>
+<td><input type="button" value="2" onclick="document.getElementById('t1').value+='2'"/></td>
+<td><input type="button" value="3" onclick="calculator.t1.value+='3'" /></td>
+<td><input type="button" value="+" onclick="document.getElementById('t1').value+='+'"/></td>
+</tr>
+
+<tr>
+<td><input type="button" value="4" onclick="calculator.t1.value+='4'"/></td>
+<td><input type="button" value="5" onclick="calculator.t1.value+='5'"/></td>
+<td><input type="button" value="6" onclick="calculator.t1.value+='6'" /></td>
+<td><input type="button" value="-" onclick="calculator.t1.value+='-'"/></td>
+</tr>
+
+<tr>
+<td><input type="button" value="7" onclick="calculator.t1.value+='7'"/></td>
+<td><input type="button" value="8"onclick="calculator.t1.value+='8'"/></td>
+<td><input type="button" value="9" onclick="calculator.t1.value+='9'" /></td>
+<td><input type="button" value="*" onclick="calculator.t1.value+='*'"/></td>
+</tr>
+
+<tr>
+<td><input type="button" value="C" onclick="calculator.t1.value=''"/></td>
+<td><input type="button" value="0" onclick="calculator.t1.value+='0'"/></td>
+<td><input type="button" value="=" onclick+="eval(document.getElementById('t1').value) document.getElementById('t1').value = equals";/></td>
+<td><input type="button" value="/" onclick="calculator.t1.value+='/'"/></td>
+</tr>
+</table>
+</form>
+
+
+</body>
+</html>
+<!calculator.t1.value=eval(calculator.t1.value)>
